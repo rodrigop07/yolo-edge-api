@@ -1,3 +1,13 @@
+# Pesos do modelo (gerenciados pelo DVC)
+models/*.pt
+models/*.onnx
+
+# Outputs de inferência
+output/
+
+# Imagens de teste grandes
+images/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
