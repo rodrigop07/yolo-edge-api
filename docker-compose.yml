@@ -6,10 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.api
-
-    build:
-      context: .
-      dockerfile: Dockerfile.api
     container_name: yolo-api
     ports:
       - "8000:8000"
