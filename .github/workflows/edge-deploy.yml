@@ -53,7 +53,7 @@ jobs:
 
       - name: Download modelo para testes
         run: |
-          pip install "dvc[ssh]"
+          pip install "dvc[ssh]" "pygtrie<2.5.0"
           mkdir -p ~/.ssh
           echo "${{ secrets.RPI_SSH_KEY }}" | tr -d '\r' > ~/.ssh/dvc_key
           chmod 600 ~/.ssh/dvc_key
