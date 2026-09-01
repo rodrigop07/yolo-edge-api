@@ -1,6 +1,8 @@
 import base64
 import io
+import json
 import time
+import uuid
 
 import httpx
 import numpy as np
@@ -16,9 +18,6 @@ from schemas import (
     PredictRequest,
     PredictResponse,
 )
-
-import json
-import uuid
 
 
 def log_event(event: str, level: str = "INFO", **kwargs):
