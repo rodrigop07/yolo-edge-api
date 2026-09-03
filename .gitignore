@@ -1,12 +1,27 @@
-# Pesos do modelo (gerenciados pelo DVC)
-models/*.pt
-models/*.onnx
+# Pesos e modelos (gerenciados pelo DVC / Ultralytics)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+weights/
 
-# Outputs de inferência
+# Outputs de treinamento e inferência (YOLO / Ultralytics)
+runs/
 output/
 
-# Imagens de teste grandes
+# Datasets, dados brutos e caches de anotações
 images/
+dataset/raw/
+datasets/
+*.cache
+
+# Arquivos de sistema operacional
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -226,3 +241,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
